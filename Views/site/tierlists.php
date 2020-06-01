@@ -1,0 +1,1 @@
+<h1>Tierlist n°<?= $params['id']?> </h1>

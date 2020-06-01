@@ -1,0 +1,17 @@
+{
+    "name": "pc/projet_05",
+    "authors": [
+        {
+            "name": "Jonathan Bessa",
+            "email": "dbessa.jonathan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Router\\": "routes/",
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "require": {}
+}
