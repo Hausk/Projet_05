@@ -1,0 +1,1 @@
+<h1>Fight n°<?= $params['id']?></h1>

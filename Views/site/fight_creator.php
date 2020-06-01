@@ -1,0 +1,1 @@
+<h1>Créateur de comparaison</h1>
