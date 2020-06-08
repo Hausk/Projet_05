@@ -1,7 +1,3 @@
-<h1>Homepage</h1>
-
-<p>Page d'accueil du site</p>
-
-<a href="/Projet_05/login">Login</a>
-<a href="/Projet_05/createur_comparaison">fight</a>
-<a href="/Projet_05/createur_tierlist">tierlist</a>
+<?php $this->title ="Tiermaker"?>
+<h2>Creer votre propre tierlist selon votre avis</h2>
+<input class="search_main" type="search" name="search" id="search">

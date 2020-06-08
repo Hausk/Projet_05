@@ -9,7 +9,7 @@ define('SCRIPTS', dirname($_SERVER['SCRIPT_NAME']) . DIRECTORY_SEPARATOR);
 
 $router = new Router($_GET['url']);
 
-$router->get('/', 'App\Controllers\BlogController@index');
+$router->get('', 'App\Controllers\BlogController@index');
 $router->get('/tl/:id', 'App\Controllers\BlogController@showPosts');
 $router->get('/fights/:id', 'App\Controllers\BlogController@showFights');
 $router->get('/login', 'App\Controllers\BlogController@login');

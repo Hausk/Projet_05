@@ -1,0 +1,229 @@
+/* ------------  Animation ------------------------ */
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+/*-----------------------------------------------*/
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-right: 0;
+}
+
+#overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100% !important;
+    text-align: center;
+    z-index: 199;
+    background-color: rgba(0,0,0,.9);
+    transition: opacity .3s;
+}
+.pop_up {
+    display: none;
+    position: absolute;
+    height: 60vh;
+    padding: 20px;
+    width: 40vw;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 2px solid black;
+    top: 78px;
+    text-align: center;
+    left: 29.8%;
+    z-index: 200;
+    background-color: white;
+}
+.fa-window-close {
+    padding: 2% 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+
+}
+.search_main {
+    width: 80%;
+    margin: 25px;
+}
+.search_main:focus {
+    border: 5px solid deeppink;
+}
+
+.title_create {
+    margin: 25px;
+    padding: 5px;
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+    transition: border-color 0.7s ease-in-out,box-shadow 1s ease-in-out;
+}
+.title_create:focus {
+    border: 5px solid deeppink !important;
+}
+
+#login {
+    text-align: center;
+}
+.login_page {
+    width: 50%;
+    margin: auto;
+    background: grey;
+    border-radius: 5%;
+    text-align: center;
+    padding: 25px;
+}
+.or_hr {
+    margin: 50px;
+    z-index: 1;
+}
+.or {
+    position: absolute;
+    color: white;
+    background-color: grey;
+    z-index: 2;
+    padding: 2px;
+    text-align: center;
+    margin-top: -32px;
+    margin-left: 14vw ;
+}
+.bot_login {
+    margin: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.create {
+    position: relative;
+    display: block;
+}
+#tablewrap {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border: solid 1px black;
+    background: #1A1A1A;
+    box-shadow: darkslategray 5px 5px 5px;
+}
+
+tr {
+    line-height: 0px;
+}
+td {
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+.labelHolder {
+    min-width: 48px;
+    color: black;
+    font-weight: 600;
+    width: 100px !important;
+    height: 80px;
+    transition: background .3s;
+    text-align: center;
+    line-height: 21px;
+}
+td:last-of-type {
+    background-color: black;
+    width: 128px;
+}
+.tier {
+    
+    min-width: 150px;
+    min-height: 80px;
+    text-align: left;
+}
+.fa-cog {
+    position: absolute;
+    margin: 15px;
+    transition: animation 1s ease-out;
+}
+.fa-cog:hover {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+.chevrons {
+    margin: auto;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.chevrons:hover {
+    -webkit-animation: zoom 1s infinite linear;
+}
+.fas {
+    color: white;
+    cursor: pointer;
+}
+.fas:hover {
+    color: grey;
+}
+#settings {
+    
+    width: 55px;
+    height: 55px;
+    background:url(../img/tierlist/settings.png) center no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+}
+#moveButtons {
+    
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+div#moveUp {
+    height: 32px;
+    width: 64px;
+    background: url(../img/tierlist/arrowup.png) center no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+}
+div#moveDown {
+    height: 32px;
+    width: 64px;
+    background: url(../img/tierlist/arrowdown.png) center no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+}
+div#moveDown:hover {
+    background-color: deeppink;
+    color: grey;
+    transition: all 1s;
+}
+

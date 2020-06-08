@@ -11,6 +11,10 @@ class BlogController extends Controller {
         return $this->view('site.index');
     }
 
+    public function home()
+    {
+        return $this->view('site.home');
+    }
 
     public function login()
     {
