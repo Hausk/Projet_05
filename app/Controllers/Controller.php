@@ -13,6 +13,7 @@ class Controller {
             $params = extract($params);
         }
         $content = ob_get_clean();
+        $title = ob_get_clean();
         require VIEWS . 'base.php';
     }
 }
